@@ -1,22 +1,22 @@
 import React, { Component } from "react";
 import axios from "axios";
 import Table from "react-bootstrap/Table";
-import StudentTableRow from "./StudentTableRow";
+import TaskTableRow from "./TaskTableRow";
 
-export default class StudentList extends Component {
+export default class TaskList extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            student: [],
+            task: [],
         };
     }
 
     componentDidMount() {
         axios
-            .get("http://localhost:4000/students")
+            .get("http://localhost:4000/tasks")
             .then((res) => {
                 this.setState({
-                    student: res.data,
+                    task: res.data,
                 });
             })
             .catch((error) => {
@@ -25,21 +25,22 @@ export default class StudentList extends Component {
     }
 
     DataTable() {
-        return this.state.student.map((res, i) => {
-            return <StudentTableRow obj={res} key={i} />;
+        return this.state.task.map((res, i) => {
+            return <TaskTableRow obj={res} key={i} />;
         });
     }
 
     render() {
         return (
-            <div className="table-wrapper">
+            <div>
                 <Table striped bordered hover>
                     <thead>
                         <tr>
-                            <th>Nombre</th>
-                            <th>Correo Electrónico</th>
-                            <th>Código</th>
-                            <th>Acción</th>
+                            <th className="titulo-table">Fecha</th>
+                            <th className="titulo-table">Actividad</th>
+                            <th className="titulo-table">Observación</th>
+                            <th className="titulo-table">Link Evidencia</th>
+                            <th className="titulo-table">Acción</th>
                         </tr>
                     </thead>
                     <tbody> {this.DataTable()}  </tbody>

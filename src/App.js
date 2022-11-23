@@ -1,4 +1,6 @@
-import './App.css';
+import './CSS/nav-general-pie.css';
+import './CSS/avance.css';
+import './CSS/burbujas.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
@@ -10,52 +12,37 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 
-import CreateStudent from "./components/create-student.component";
-import EditStudent from "./components/edit-student.component";
-import StudentList from "./components/student-list.component";
+import CreateTask from "./components/create-task.component";
+import EditTask from "./components/edit-task.component";
+import TaskList from "./components/task-list.component";
 
 
-function Avance() {
+function App() {
   return (
 
-    <div className="App">
+    <div className="body">
 
       <Router>
 
+        <h1 class="titulo_principal">¡Sube tu avance!</h1>
+        
+        <div class="bienvenida">
+          <p class="saludo">&#127900; &#119137; ¡Hola guitarrista! Estás en la última sección, deja tu huella por aquí, siéntete orgullo de todo lo que has construido hasta ahora y disfruta de tu progreso. ¡Estamos orgullosos de ti!. Te dejamos una canción de fondo que puede animarte a seguir explorando..¿Has escuchado la canción de Mario Bros en guitarra? ¡Dale en play! recuerda que puedes adecuar el volúmen según te sea más cómodo. &#127900; &#119137;</p>
+          <audio class="audio" src="multimedia/musica/mario-bross-guitarra-.mp3"controls loop="true" volumen="10%"></audio>
+        </div>
         <header className="App-header">
 
-          <Navbar bg="dark" variant="dark">
-
-            <Container>
-
-              <Navbar.Brand>
-
-                <Link to={"/create-student"} className="nav-link">
-                  App React MERN Stack
-                </Link>
-
-              </Navbar.Brand>
-
-              <Nav className="justify-content-end">
-
-                <Nav>
-                  <Link to={"/create-student"} className="nav-link">
-                    Crear Estudiante
+          <Navbar className='opcionesNav'>
+              <Nav  className='opcionesNav'>
+                  <Link to={"/create-task"}  className="btn-opcion">
+                    Crear Evidencia
                   </Link>
-                </Nav>
 
-                <Nav>
-                  <Link to={"/student-list"} className="nav-link">
-                    Listar Estudiantes
+                  <Link to={"/task-list"}  className="btn-opcion">
+                    Listar Evidencias
                   </Link>
-                </Nav>
-
               </Nav>
-
-            </Container>
-
           </Navbar>
-
         </header>
 
 
@@ -69,25 +56,25 @@ function Avance() {
                   <Route
                     exact
                     path="/"
-                    component={(props) => <CreateStudent {...props} />}
+                    component={(props) => <CreateTask {...props} />}
                   />
 
                   <Route
                     exact
-                    path="/create-student"
-                    component={(props) => <CreateStudent {...props} />}
+                    path="/create-task"
+                    component={(props) => <CreateTask {...props} />}
                   />
 
                   <Route
                     exact
-                    path="/edit-student/:id"
-                    component={(props) => <EditStudent {...props} />}
+                    path="/edit-task/:id"
+                    component={(props) => <EditTask {...props} />}
                   />
 
                   <Route
                     exact
-                    path="/student-list"
-                    component={(props) => <StudentList {...props} />}
+                    path="/task-list"
+                    component={(props) => <TaskList {...props} />}
                   />
                 </Switch>
 
@@ -106,4 +93,4 @@ function Avance() {
   );
 }
 
-export default Avance;
+export default App;

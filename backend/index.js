@@ -6,7 +6,7 @@ let mongoose = require("mongoose");
 let cors = require("cors");
 let bodyParser = require("body-parser");
 
-const studentRoute = require("../backend/routes/student.route");
+const taskRoute = require("../backend/routes/task.route");
 const db = require("../backend/database/db").mongoURI;
 
 //conexion de la base de datos con mongoDB hacia Atlas
@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.use(cors());
-app.use("/students", studentRoute);
+app.use("/tasks", taskRoute);
 
 //configuracion del puerto
 const port = process.env.PORT || 4000;

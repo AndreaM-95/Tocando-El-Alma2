@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link rel="stylesheet" href="/css/páginas/reset.css">
 
-        <title>Panel | Tocando EL Alma</title>
+        <title>Tu avance | Tocando EL Alma</title>
         <link href="https://fonts.googleapis.com/css?family=Pacifico|Roboto:100,300,400,500,700,900" rel="stylesheet" />
 
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -18,13 +18,15 @@
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital@1&display=swap" rel="stylesheet">
         <link rel="icon" href="./multimedia/imagenes/favicon.ico"/>
 
-        <link rel="stylesheet" href="css/nav-general-pie.css">
-        <link rel="stylesheet" href="css/panel.css">
-        <link rel="stylesheet" href="css/animacion-seccion.css">
+        <link rel="stylesheet" href="/src/CSS/nav-general-pie.css">
   </head>
-  <body>
+  <body class="body">
+    <nav class="navbar">
+      <a href="https://www.youtube.com/watch?v=pZSWeggqEe4"><button class="btn-ingresar">Inicio</button></a>
+    </nav>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
+    
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -35,5 +37,18 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div class="burbujas">
+      <img src="multimedia/imagenes/fa.png" class="burbuja img-burbuja">
+      <img src="multimedia/imagenes/negra.png" class="burbuja img-burbuja">
+      <img src="multimedia/imagenes/sol.png" class="burbuja img-burbuja">
+      <img src="multimedia/imagenes/sol.png" class="burbuja img-burbuja">
+      <img src="multimedia/imagenes/fa.png" class="burbuja img-burbuja">
+      <img src="multimedia/imagenes/negra.png" class="burbuja img-burbuja">
+    </div>
+    <footer class="rodapie">
+      <img class="rodapie-img" src="multimedia/imagenes/logo.png">
+      <p class="rodapie-texto"><strong>Desarrollado por Andrea Mejia - 2022</strong> </p>
+      <p class="rodapie-texto"><strong>&copy Copyright</strong></p>
+    </footer>
   </body>
 </html>

@@ -1,4 +1,4 @@
-body{
+.body{
     background: #F7DD8D;
     width: 100%;
     margin: 0;
@@ -10,7 +10,7 @@ body{
 /*TODO || Panel de navegación || */
 .navbar{
     width: 100%;
-    justify-content: flex-end;
+    justify-content: end;
 }
 .btn-ingresar, .btn-registrar{
     cursor:pointer;
@@ -20,7 +20,7 @@ body{
     border-radius: 1.5rem;
     border: none;
     padding: .5rem;
-    margin-right: 1rem;
+    margin: 1rem 1rem 1rem 2rem;
     color: aliceblue;
     font-family: 'Ubuntu', sans-serif;
 
@@ -50,7 +50,6 @@ body{
     padding-bottom: .5rem;
     background: #B57147;
     font-family: Pacifico, cursive;
-
 }
 .rodapie-img{
     width: 8%;

@@ -1,0 +1,143 @@
+.bienvenida{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 1.2rem;
+    margin: 2rem 0 1rem 0;
+}
+.saludo{
+    width: 80%;
+}
+.audio{
+    width: 15%;
+}
+
+main{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.table{
+    border: black solid;
+    background: #845A25;
+    border-radius: 1rem;
+    padding: 1rem 4rem 1rem 4rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.th{
+    border: #fff solid;
+    padding: .5rem;
+    font-size: 1.3rem;
+    color: aliceblue;
+    background: #845A25;
+    text-align: center;
+}
+
+td {
+    border: #fff solid;
+    background: #e9ca73;
+    width: calc(100% / 4);
+    padding: .5rem;
+}
+
+.label{
+    font-size: 1.2rem;
+    color: #fff;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.input{
+    text-align: center;
+}
+
+.box-btn{
+    margin-top: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+}
+
+/*Botones*/
+.btn-avance, .btn-edit-delet, .link{
+    background:#C7AF4F;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+}
+
+.btn-avance{
+    margin: 1rem 2rem 0 2rem;
+    width: 20%;
+    padding: .5rem;
+    font-size: 1.2rem;
+}
+
+.btn-avance:hover, .btn-opcion:hover{
+    background: linear-gradient(180grad, #AB9640, rgb(137, 110, 30));
+    color: white;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+	cursor: pointer;
+    border: none;
+}
+
+.opcionesNav{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    padding: 0 3rem 0 0;
+}
+
+.btn-opcion{
+    margin: 1rem;
+    width: 15%;
+    padding: .5rem;
+    font-size: 1.2rem;
+    background:#845A25;
+    font-weight: 600;
+    border-radius: 1rem;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+}
+
+.titulo-table{
+    color: azure;
+}
+.boxtable{
+    border-radius: 1rem;
+}
+.datos-tabla{
+    background-color:#cf944d;
+}
+
+.btn-edit-delet{
+    margin-top: .5rem;
+}
+
+.link{
+    text-decoration: none;
+    color: black;
+    margin-top: .5rem;
+    padding: .2rem .5rem .2rem .5rem;
+}
+
+.btn-edit-delet:hover, .link:hover{
+    background: linear-gradient(180grad, #AB9640, rgb(137, 110, 30));
+    color: white;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+	cursor: pointer;
+    border: none;
+}
