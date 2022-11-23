@@ -1,0 +1,62 @@
+body{
+    background: #F7DD8D;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+/*TODO || Panel de navegación || */
+.navbar{
+    width: 100%;
+    justify-content: flex-end;
+}
+.btn-ingresar, .btn-registrar{
+    cursor:pointer;
+    background: #845A25;
+    width: 8rem;
+    font-size:1.2rem;
+    border-radius: 1.5rem;
+    border: none;
+    padding: .5rem;
+    margin-right: 1rem;
+    color: aliceblue;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+.btn-ingresar:hover, .btn-registrar:hover{
+    background: linear-gradient(180grad, #AB9640, rgb(137, 110, 30));
+    color: aliceblue;
+    font-weight: 600;
+    box-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+    transform:scale(1.1);
+	cursor: pointer;
+}
+
+/*TODO || Cuerpo || */
+.titulo_principal{
+    font-family: Pacifico, cursive;
+    text-align: center;
+    color: black;
+    font-size: 3rem;
+    text-shadow: 2px 5px 5px rgba(0, 0, 0, .6);
+}
+
+.rodapie{
+    margin-top: 2rem;
+    background: #1E1A06; 
+    text-align: center;
+    padding-bottom: .5rem;
+    background: #B57147;
+    font-family: Pacifico, cursive;
+
+}
+.rodapie-img{
+    width: 8%;
+}
+.rodapie-texto{
+    font-weight: 600;
+    line-height: 1.3rem;
+    font-size: 1.2rem;
+}

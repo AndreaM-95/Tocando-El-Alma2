@@ -1,0 +1,43 @@
+.contenedor figure{
+    position:relative;
+    height: 200px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 6px;
+    margin: .7rem;
+}
+.contenedor figure img{
+    width: 100%;
+    height: 100%;
+    transition: all 400ms ease-out;
+    will-change: transform;
+    align-items: center;
+}
+.contenedor figure .capa{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background:#C7AF4F;
+    transition: all 400ms ease-out;
+    opacity: 0;
+    visibility: hidden;
+    text-align: center;
+
+}
+.contenedor figure:hover > .capa {
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor figure:hover > img{
+    transform: scale(1.3);
+}
+
+.contenedor figure .capa p{
+    color: black;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    padding: 1rem;
+}
